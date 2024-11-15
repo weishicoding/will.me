@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 import { ProgressProvider } from '@/components/progress-provider'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { ThemeProvider } from '@/components/theme-provider'
+import { Header } from '@/components/header'
 
 const inter = Inter({
     variable: '--font-inter',
@@ -67,7 +68,8 @@ export default function RootLayout({
                 <SpeedInsights />
                 <ThemeProvider attribute='class' defaultTheme='dark' enableSystem={false}>
                     <ProgressProvider>
-                        {children}
+                        <Header />
+                        <main className='static mx-auto max-w-5xl px-8 py-24 md:mb-16'>{children}</main>
                         <Toaster />
                         <TailwindIndicator />
                     </ProgressProvider>
