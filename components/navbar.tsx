@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import Link from 'next/link'
 import {
     NavigationMenu,
@@ -8,11 +7,10 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     navigationMenuTriggerStyle
-} from '@/components/ui/navigation-menu'
+} from '@/components/ui/NavigationMenu'
 
-export function Navbar() {
-
-    return (
+const Navbar = () => {
+  return (
         <NavigationMenu className='hidden md:block'>
             <NavigationMenuList key={'navbar'}>
                 {/* About me */}
@@ -51,3 +49,5 @@ export function Navbar() {
         </NavigationMenu>
     )
 }
+
+export default Navbar

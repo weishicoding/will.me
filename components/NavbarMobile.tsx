@@ -9,7 +9,7 @@ import { UtmMediums } from '@/types/links'
 import { HeaderLinks } from '@/config/links'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
-import { Icon } from '@/components/icon'
+import { Icon } from '@/components/Icon'
 
 import { CalendarButton } from './calendar-button'
 

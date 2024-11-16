@@ -1,9 +1,12 @@
-import React from 'react'
+import Introduction from "@/components/home/Introduction";
+import React from "react";
 
 const Home = () => {
   return (
-    <div>Homepage</div>
-  )
-}
+    <>
+      <Introduction />
+    </>
+  );
+};
 
-export default Home
+export default Home;

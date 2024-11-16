@@ -4,7 +4,7 @@ import Link from 'next/link'
 import LogoBlack from '@/public/images/mg-logo-black.png'
 import LogoWhite from '@/public/images/mg-logo-white.png'
 
-import { Navbar } from '@/components/navbar'
+import Navbar from '@/components/Navbar'
 // import { NavbarMobile } from '@/components/navbar-mobile'
 
 export function Header() {
