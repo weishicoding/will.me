@@ -33,7 +33,7 @@ export const skills = [
   { name: "Next.js", iconPath: nextJs, color: "#0070f3" },
   { name: "Docker", iconPath: mdiDocker, color: "#059669" },
   { name: "Java", iconPath: mdiJava, color: "#d946ef" },
-  { name: "Spring Boot", iconPath: mdiSpring, color: "#c026d3" },
+  { name: "Spring Boot", iconPath: mdiSpring, color: "#3178c6" },
   { name: "Tailwind CSS", iconPath: mdiTailwind, color: "#38bdf8" },
   { name: "HTML5", iconPath: mdiLanguageHtml5, color: "#e34f26" },
   { name: "CSS3", iconPath: mdiLanguageCss3, color: "#3572b5" },
