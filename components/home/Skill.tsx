@@ -1,5 +1,6 @@
 import React from "react";
 import ContactCard from "../ContactCard";
+import LanguageSkills from "../LanguageSkills";
 
 const Skill = () => {
   return (
@@ -30,7 +31,11 @@ const Skill = () => {
         </div>
       </section>
 
+      {/* Selling myself and contact card */}
       <ContactCard />
+
+      {/* Displaying language skill I used */}
+      <LanguageSkills />
     </>
   );
 };
