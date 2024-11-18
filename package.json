@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/react": "^1.6.1",
     "@radix-ui/react-navigation-menu": "^1.2.1",
     "@tabler/icons-react": "^3.22.0",
     "@vercel/speed-insights": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "colord": "^2.9.3",
-    "@mdi/react": "^1.6.1",
+    "contentlayer": "^0.3.4",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "eslint-plugin-unused-imports": "^4.1.4",
     "lucide-react": "^0.459.0",
