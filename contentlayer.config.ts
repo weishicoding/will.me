@@ -1,6 +1,7 @@
 import { defineDocumentType, makeSource } from "contentlayer2/source-files";
 import { rehypePlugins, remarkPlugins } from "./lib/mdx/plugins";
 import { MDXOptions } from "contentlayer2/core";
+import { BlogAuthors } from "@/config/common";
 
 const Blog = defineDocumentType(() => ({
   name: "Blog",
@@ -32,6 +33,11 @@ const Blog = defineDocumentType(() => ({
       description: "Image for the blog post",
       required: true,
     },
+    authorId: {
+      type: "string",
+      description: "The author of the blog post",
+      required: true,
+    },
     tags: { type: "list", of: { type: "string" }, default: [] },
   },
   computedFields: {
@@ -39,11 +45,16 @@ const Blog = defineDocumentType(() => ({
       type: "string",
       resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
     },
+    author: {
+      type: "nested",
+      resolve: (doc) =>
+        BlogAuthors.find((author) => author.id === doc.authorId),
+    },
   },
 }));
 
 export default makeSource({
-  contentDirPath: "contents",
+  contentDirPath: "content",
   documentTypes: [Blog],
   mdx: {
     remarkPlugins: remarkPlugins,

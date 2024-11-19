@@ -6,3 +6,10 @@ export const personalCareerPath = [
   { title: "Chinasoft International", subtitle: "Jan 2019 - Apr 2021" },
   { title: "IsoftStone", subtitle: "Apr 2017 - Jan 2019" },
 ];
+
+export const BlogAuthors = [
+  {
+    id: "Will",
+    name: "Will Shi",
+  },
+];
