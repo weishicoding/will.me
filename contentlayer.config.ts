@@ -1,7 +1,9 @@
-import { defineDocumentType } from "contentlayer/source-files";
+import { defineDocumentType, makeSource } from "contentlayer2/source-files";
+import { rehypePlugins, remarkPlugins } from "./lib/mdx/plugins";
+import { MDXOptions } from "contentlayer2/core";
 
 const Blog = defineDocumentType(() => ({
-  name: "BlogPost",
+  name: "Blog",
   filePathPattern: "blog/**/*.mdx",
   contentType: "mdx",
   fields: {
@@ -30,11 +32,6 @@ const Blog = defineDocumentType(() => ({
       description: "Image for the blog post",
       required: true,
     },
-    authorId: {
-      type: "string",
-      description: "The author of the blog post",
-      required: true,
-    },
     tags: { type: "list", of: { type: "string" }, default: [] },
   },
   computedFields: {
@@ -44,3 +41,12 @@ const Blog = defineDocumentType(() => ({
     },
   },
 }));
+
+export default makeSource({
+  contentDirPath: "contents",
+  documentTypes: [Blog],
+  mdx: {
+    remarkPlugins: remarkPlugins,
+    rehypePlugins: rehypePlugins,
+  } as MDXOptions,
+});
