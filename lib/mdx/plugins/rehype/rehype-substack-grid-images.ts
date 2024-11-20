@@ -41,7 +41,7 @@ export const rehypeGridImages: Plugin<[], Root> = () => {
           })),
         } as Element;
 
-        parent?.children.splice(index ?? 0, 1, grid);
+        parent?.children.splice(index || 0, 1, grid);
       }
     });
   };

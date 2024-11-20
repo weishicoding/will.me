@@ -51,7 +51,7 @@ export const rehypeCode: [
     ],
     parseMetaString: (meta) => {
       const titleMatch = meta.match(titleRegex);
-      const title = titleMatch?.[1] ?? null;
+      const title = titleMatch?.[1] || null;
 
       return { title };
     },

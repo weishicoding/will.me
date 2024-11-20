@@ -35,7 +35,7 @@ const Post = async () => {
         </Button>
       </div>
 
-      <div className="-mx-4 mt-4 grid sm:grid-cols-2">
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
         {posts.map((post) => (
           <PostCard key={post.id} {...post} />
         ))}

@@ -12,10 +12,10 @@ const PostCard: React.FC<BlogPreview> = (post) => {
     <Link
       key={post.id}
       href="/blog"
-      className="flex flex-col rounded-lg p-4 transition-all duration-200 hover:bg-muted"
+      className="flex flex-col rounded-lg p-4 transition-all bg-muted duration-200 hover:bg-accent"
     >
       <Image
-        src={post.image ?? "/images/blog-post-placeholder.webp"}
+        src={post.image || "/images/default.png"}
         width={1280}
         height={720}
         alt={post.title}

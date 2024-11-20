@@ -57,7 +57,7 @@ export const rehypeInlineCode: Plugin<[RehypeShikiCoreOptions], Root> = () => {
             highlighter
               .getTheme(name)
               .settings.find(({ scope }) => scope?.includes(lang.slice(1)))
-              ?.settings.foreground ?? "inherit"
+              ?.settings.foreground || "inherit"
         );
 
         inlineCode.children[0].children[0].properties.style = themeKeys
@@ -67,7 +67,7 @@ export const rehypeInlineCode: Plugin<[RehypeShikiCoreOptions], Root> = () => {
 
       inlineCode.properties.className = ["shiki"];
 
-      parent?.children.splice(index ?? 0, 1, inlineCode);
+      parent?.children.splice(index || 0, 1, inlineCode);
     });
   };
 };
