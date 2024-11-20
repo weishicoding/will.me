@@ -7,7 +7,7 @@ import "../styles/globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "sonner";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import ProgressProvider from "@/components/ProgressProvider";
 import TailwindIndicator from "@/components/TailwindIndicator";
 import ThemeProvider from "@/components/ThemeProvider";

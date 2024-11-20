@@ -1,4 +1,11 @@
 import { colord } from "colord";
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+//The function cn you provided is a utility function that merges class names using clsx and twMerge.
+export const cn = (...inputs: ClassValue[]) => {
+  return twMerge(clsx(inputs));
+};
 
 // Change hex to rgb color
 export const hexToRgb = (
