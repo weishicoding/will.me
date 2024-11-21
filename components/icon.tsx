@@ -1,3 +1,6 @@
+/**
+ * https://github.com/gatteo/matteogiardino.com
+ */
 import React from "react";
 import {
   IconBrandGithub,
@@ -75,7 +78,7 @@ export const Icon = React.forwardRef<
     return null;
   }
 
-  return <IconComponent ref={ref} className={className} {...props} />;
+  return <IconComponent className={className} {...props} />;
 });
 
 Icon.displayName = "Icon";

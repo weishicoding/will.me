@@ -1,3 +1,6 @@
+/**
+ * https://github.com/gatteo/matteogiardino.com
+ */
 import { Element, Root } from "hast";
 import { select } from "hast-util-select";
 import type { Plugin } from "unified";

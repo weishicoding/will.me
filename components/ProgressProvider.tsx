@@ -1,14 +1,22 @@
-'use client'
+"use client";
 
-import { AppProgressBar as ProgressBar } from 'next-nprogress-bar'
+import React from "react";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 
-const ProgressProvider = ({ children }: Readonly<{ children: React.ReactNode }>) => {
+const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   return (
-        <>
-            {children}
-            <ProgressBar height='4px' color={'#06b6d4'} options={{ showSpinner: false }} shallowRouting />
-        </>
-    )
-}
+    <>
+      {children}
+      <ProgressBar
+        height="4px"
+        color="#a855f7"
+        options={{ showSpinner: false }}
+        shallowRouting
+      />
+    </>
+  );
+};
 
-export default ProgressProvider
+export default ProgressProvider;

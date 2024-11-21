@@ -1,3 +1,6 @@
+/**
+ * https://github.com/gatteo/matteogiardino.com
+ */
 import Slugger from "github-slugger";
 import { type Plugin } from "unified";
 import { visit } from "unist-util-visit";
