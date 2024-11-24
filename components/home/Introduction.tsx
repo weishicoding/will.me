@@ -3,6 +3,7 @@ import React from "react";
 import Profile from "@/public/images/profile.jpg";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { Routes } from "@/config/common";
 
 const Introduction = () => {
   return (
@@ -47,7 +48,7 @@ const Introduction = () => {
                 Download CV
               </Button>
               <Button variant="secondary" className="font-semibold leading-7">
-                <Link href="/contact">Contact Me</Link>
+                <Link href={Routes.Contact}>Contact Me</Link>
               </Button>
             </div>
           </div>

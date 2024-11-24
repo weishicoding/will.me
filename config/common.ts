@@ -13,3 +13,12 @@ export const BlogAuthors = [
     name: "Will Shi",
   },
 ];
+
+export const Routes = {
+  Home: "",
+  Blog: "/blog",
+  Contact: "/contact",
+  About: "/about",
+  Work: "/work",
+  LocalBlogPost: (slug: string) => `/blog/${slug}`,
+};

@@ -10,6 +10,7 @@ type Props = {
 };
 
 import React from "react";
+import { Routes } from "@/config/common";
 
 const ContactCard: React.FC<Props> = ({ className }) => {
   return (
@@ -48,7 +49,7 @@ const ContactCard: React.FC<Props> = ({ className }) => {
             </p>
             <div className="mt-10 flex items-center justify-start gap-x-6 sm:justify-center lg:justify-start">
               <Button asChild>
-                <Link href="/contact">Contact me</Link>
+                <Link href={Routes.Contact}>Contact me</Link>
               </Button>
             </div>
           </div>

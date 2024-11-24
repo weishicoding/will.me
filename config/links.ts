@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icon";
+import { Routes } from "./common";
 
 type ContactLinks = {
   name: string;
@@ -63,19 +64,19 @@ export const FooterLinkGroups: FooterLinkGroups = [
     id: 2,
     links: [
       {
-        href: "/",
+        href: Routes.Home,
         title: "home",
       },
       {
-        href: "/blog",
+        href: Routes.Blog,
         title: "blog",
       },
       {
-        href: "/work",
+        href: Routes.Work,
         title: "work",
       },
       {
-        href: "/contact",
+        href: Routes.Contact,
         title: "contact",
       },
     ],

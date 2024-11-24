@@ -2,6 +2,7 @@ import { allBlogs } from "@/.contentlayer/generated";
 import { remark } from "remark";
 import { BlogPreview, BlogSource, LocalBlog, TOC } from "@/config/types";
 import { remarkHeading } from "./mdx/plugins/remark/remark-heading";
+import { Routes } from "@/config/common";
 
 type Options = {
   limit?: number;
@@ -25,7 +26,7 @@ export function getLocalBlogPosts({ limit }: Options = {}): BlogPreview[] {
       date: new Date(post.createdAt),
       image: post.image,
       source: BlogSource.Local,
-      url: post.slug,
+      url: Routes.LocalBlogPost(post.slug),
       tags: post.tags,
       author: post.author,
     }));

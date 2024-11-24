@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { IconArrowRight } from "@tabler/icons-react";
 import PostCard from "../blog/PostCard";
+import { Routes } from "@/config/common";
 
 const Post = async () => {
   const posts = await getAllBlogPosts(4);
@@ -28,7 +29,7 @@ const Post = async () => {
           size="sm"
           asChild
         >
-          <Link href="/blog">
+          <Link href={Routes.Blog}>
             more blogs
             <IconArrowRight className="ml-2 inline-block size-5 transition-transform duration-200 group-hover:translate-x-1" />
           </Link>
