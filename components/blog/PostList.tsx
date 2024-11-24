@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/Label";
 import { BlogPreview } from "@/config/types";
 import PostCard from "./PostCard";
 
-const BlogList: React.FC<{ posts: BlogPreview[] }> = ({ posts }) => {
+const PostList: React.FC<{ posts: BlogPreview[] }> = ({ posts }) => {
   const [searchValue, setSearchValue] = React.useState("");
 
   const filteredPosts = posts.filter((post) =>
@@ -48,4 +48,4 @@ const BlogList: React.FC<{ posts: BlogPreview[] }> = ({ posts }) => {
   );
 };
 
-export default BlogList;
+export default PostList;

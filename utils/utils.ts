@@ -1,6 +1,7 @@
 import { colord } from "colord";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { site } from "@/config/site";
 
 //The function cn you provided is a utility function that merges class names using clsx and twMerge.
 export const cn = (...inputs: ClassValue[]) => {
@@ -23,3 +24,8 @@ export const hexToRgb = (
     return `rgb(${r}, ${g}, ${b})`;
   }
 };
+
+export function absoluteUrl(url: string) {
+  if (url.startsWith("/")) url = url.slice(1);
+  return `${site.url}/${url}`;
+}

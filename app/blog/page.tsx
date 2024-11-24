@@ -1,4 +1,4 @@
-import BlogList from "@/components/blog/BlogList";
+import BlogList from "@/components/blog/PostList";
 import PageHerder from "@/components/PageHerder";
 import { getAllBlogPosts } from "@/lib/blog";
 

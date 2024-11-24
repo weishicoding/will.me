@@ -1,6 +1,6 @@
 import { allBlogs } from "@/.contentlayer/generated";
 import { remark } from "remark";
-import { BlogPreview, BlogSource, LocalBlog, TOC } from "@/config/types";
+import { BlogPreview, BlogSource, LocalBlog, PN } from "@/config/types";
 import { remarkHeading } from "./mdx/plugins/remark/remark-heading";
 import { Routes } from "@/config/common";
 
@@ -42,11 +42,11 @@ export async function getAllBlogPosts(limit?: number): Promise<BlogPreview[]> {
   return [...sortedLocalPosts].slice(0, limit);
 }
 
-export const getTOC = async (content: string) => {
+export const getPN = async (content: string) => {
   const result = await remark().use(remarkHeading).process(content);
 
-  if ("toc" in result.data) {
-    return result.data.toc as TOC[];
+  if ("pn" in result.data) {
+    return result.data.pn as PN[];
   }
 
   return [];

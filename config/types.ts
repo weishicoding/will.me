@@ -1,5 +1,6 @@
 import { MDX } from "contentlayer2/core";
-export type TOC = {
+// post navigation
+export type PN = {
   title: string;
   url: string;
   depth: number;

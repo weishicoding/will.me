@@ -5,13 +5,13 @@ import Slugger from "github-slugger";
 import { type Plugin } from "unified";
 import { visit } from "unist-util-visit";
 
-import { TOC } from "@/config/types";
+import { PN } from "@/config/types";
 
 const slugger = new Slugger();
 
 export const remarkHeading: Plugin = () => {
   return (tree, file) => {
-    const toc: TOC[] = [];
+    const pn: PN[] = [];
     slugger.reset();
 
     visit(tree, "heading", (node: any) => {
@@ -23,7 +23,7 @@ export const remarkHeading: Plugin = () => {
 
       node.data.hProperties.id = id;
 
-      toc.push({
+      pn.push({
         title: text,
         url: id,
         depth: node.depth,
@@ -32,6 +32,6 @@ export const remarkHeading: Plugin = () => {
       return "skip";
     });
 
-    file.data.toc = toc;
+    file.data.pn = pn;
   };
 };

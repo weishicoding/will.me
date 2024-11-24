@@ -18,7 +18,7 @@ const Blog = defineDocumentType(() => ({
     },
     modifiedAt: {
       type: "string",
-      required: false,
+      required: true,
     },
     summary: {
       type: "string",
