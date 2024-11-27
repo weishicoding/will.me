@@ -3,6 +3,10 @@ import React from "react";
 import { getPN } from "@/lib/blog";
 import PostNavigation from "@/components/blog/PostNavigation";
 import Mdx from "../mdx/Mdx";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { IconArrowLeft } from "@tabler/icons-react";
+import { Routes } from "@/config/common";
 
 type Props = {
   url: string;
@@ -24,6 +28,19 @@ const Postcontent: React.FC<Props> = async ({ title, body, url }) => {
         </article>
         <aside className="hidden lg:block lg:min-w-[270px] lg:max-w-[270px]">
           <div className="sticky top-24 will-change-[transform,opacity]">
+            <div className="border-b w-full mb-4">
+              <Button
+                variant="ghost"
+                className="group mb-2 -mx-3  md:mx-0"
+                size="sm"
+                asChild
+              >
+                <Link href={Routes.Blog}>
+                  <IconArrowLeft className="inline-block size-5 transition-transform duration-200 group-hover:-translate-x-1" />
+                  Back to posts
+                </Link>
+              </Button>
+            </div>
             {pn && pn.length > 0 && <PostNavigation pn={pn} />}
           </div>
         </aside>

@@ -12,6 +12,10 @@ export function getLocalBlogPost(slug: string): LocalBlog | undefined {
   return allBlogs.find((p) => p.slug === slug);
 }
 
+export function getUrlFromSource(slug: string) {
+  return Routes.LocalBlogPost(slug);
+}
+
 export function getLocalBlogPosts({ limit }: Options = {}): BlogPreview[] {
   return allBlogs
     .sort(

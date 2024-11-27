@@ -24,7 +24,7 @@ const PostNavigation: React.FC<PostNavigationProps> = (props) => {
 
   return (
     <div className="max-h-[calc(100vh-10rem)] overflow-y-auto">
-      <div className="mb-4 flex items-center gap-4">Indice</div>
+      <div className="mb-4 flex items-center gap-4">On this page</div>
       <div>
         {pn.map((item) => {
           const { title, url, depth } = item;

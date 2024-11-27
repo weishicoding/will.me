@@ -1,11 +1,24 @@
+"use client";
+
 import Image from "next/image";
-import {} from "@/utils/utils";
+import { absoluteUrl } from "@/utils/utils";
 import { formatDate } from "@/utils/dateFormat";
 
 import { BlogAuthor, BlogSource } from "@/config/types";
 
 import { AspectRatio } from "../ui/aspect-ratio";
 import { Badge } from "@/components/ui/Badge";
+
+import { buttonVariants } from "@/components/ui/button";
+
+import {
+  EmailShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+} from "react-share";
+
+import { IconBrandLinkedin, IconBrandX, IconMail } from "@tabler/icons-react";
+
 type Props = {
   title: string;
   slug: string;
@@ -18,12 +31,15 @@ type Props = {
 };
 
 import React from "react";
+import { getUrlFromSource } from "@/lib/blog";
 
 const PostHeader: React.FC<Props> = ({
   createdAt,
   title,
+  slug,
   summary,
   image,
+  author,
   tags,
 }) => {
   return (
@@ -33,6 +49,9 @@ const PostHeader: React.FC<Props> = ({
         <div className="mt-2 text-muted-foreground">{summary}</div>
         <div className="mt-8 flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm">
+            <div className="flex flex-row items-center gap-2">
+              <p>{author.name}</p>
+            </div>
             <div className="text-muted-foreground">•</div>
 
             <p>{formatDate(createdAt, "D MMM, YYYY")}</p>
@@ -49,6 +68,48 @@ const PostHeader: React.FC<Props> = ({
                 </div>
               </>
             )}
+          </div>
+          <div className="flex gap-2 justify-start">
+            <EmailShareButton
+              url={absoluteUrl(getUrlFromSource(slug))}
+              subject={title}
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "outline",
+                })}
+              >
+                <IconMail className="size-4" />
+              </div>
+            </EmailShareButton>
+            <LinkedinShareButton
+              url={absoluteUrl(getUrlFromSource(slug))}
+              title={title}
+              source={"Will Shi"}
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "outline",
+                })}
+              >
+                <IconBrandLinkedin className="size-4" />
+              </div>
+            </LinkedinShareButton>
+            <TwitterShareButton
+              title={title}
+              url={absoluteUrl(getUrlFromSource(slug))}
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "outline",
+                })}
+              >
+                <IconBrandX className="size-4" />
+              </div>
+            </TwitterShareButton>
           </div>
         </div>
       </div>
