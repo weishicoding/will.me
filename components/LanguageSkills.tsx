@@ -20,6 +20,7 @@ const LanguageSkills = () => {
           </div>
         );
       })}
+      <div className="mt-12 lg:mt-16 border-b w-full"></div>
     </section>
   );
 };

@@ -5,7 +5,7 @@ import LanguageSkills from "../LanguageSkills";
 const Skill = () => {
   return (
     <>
-      <section id="business" className="mt-32">
+      <section id="business" className="mt-24 lg:mt-32">
         <div className="mx-auto max-w-7xl pb-8 lg:px-8">
           <div className="max-w-2xl lg:mx-auto lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-purple-400">
