@@ -1,3 +1,4 @@
+import About from "@/components/home/About";
 import Experience from "@/components/home/Experience";
 import Introduction from "@/components/home/Introduction";
 import Post from "@/components/home/Post";
@@ -9,9 +10,9 @@ const Home = () => {
   return (
     <>
       <Introduction />
-      <Skill />
-      <Experience />
+      <About />
       <Project />
+      <Skill />
       <Post />
     </>
   );

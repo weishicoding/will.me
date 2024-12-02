@@ -3,11 +3,11 @@ import { getLocalBlogPost } from "@/lib/blog";
 import { absoluteUrl } from "@/utils/utils";
 import type { Metadata, ResolvingMetadata } from "next";
 import { site } from "@/config/site";
-import { formatDate } from "@/utils/dateFormat";
 import { notFound } from "next/navigation";
 import PostHeader from "@/components/blog/PostHeader";
 import { BlogSource } from "@/config/types";
 import Postcontent from "@/components/blog/PostContent";
+import { ScrollIndicator } from "@/components/ScrollIndicator";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -85,9 +85,7 @@ export default async function Page({ params }: Props) {
         url={absoluteUrl(Routes.LocalBlogPost(slug))}
       />
 
-      {/* <Footer slug={slug} title={post.title} author={post.author} source={BlogPostSource.Local} />
-
-        <ScrollIndicator /> */}
+      <ScrollIndicator />
     </>
   );
 }
