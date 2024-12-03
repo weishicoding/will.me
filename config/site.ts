@@ -1,5 +1,3 @@
-import { Metadata } from "next";
-
 type Site = {
   title: string;
   description: string;
