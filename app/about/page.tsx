@@ -1,4 +1,6 @@
+import Experience from "@/components/home/Experience";
 import PageHerder from "@/components/PageHerder";
+import Talents from "@/components/Talents";
 import React from "react";
 
 const title = "About me";
@@ -13,6 +15,8 @@ const About = () => {
         colorFrom="from-purple-600"
         colorTo="to-pink-400"
       />
+      <Talents />
+      <Experience />
     </>
   );
 };
