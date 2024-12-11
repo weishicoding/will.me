@@ -13,7 +13,7 @@ const About = () => {
       </div>
 
       <div className="">
-        <p className="my-8 text-lg leading-8 text-muted-foreground dark:text-gray-300">
+        <p className="my-8 text-lg leading-8 text-muted-foreground text-neutral-600 dark:text-neutral-400">
           I am a full stack engineer with 7 years of experience in web
           application development, specializing in Java and React. Recent focus
           on platform engineering including service architecture, build and test
@@ -50,7 +50,7 @@ const About = () => {
                 </h3>
               </div>
 
-              <p className="mt-4 text-gray-300 md:mt-2 md:text-center">
+              <p className="mt-4 text-neutral-600 dark:text-neutral-400 md:mt-2 md:text-center">
                 I've been working for over 7 years in full-stack web
                 development.
               </p>
@@ -81,7 +81,7 @@ const About = () => {
                   6+ Real Bussiness Projects
                 </h3>
               </div>
-              <p className="mt-4 text-gray-300 md:mt-2 md:text-center">
+              <p className="mt-4 text-neutral-600 dark:text-neutral-400 md:mt-2 md:text-center">
                 I led 3 large projects, developed and built successfully several
                 SaaS E-Commerce projects.
               </p>
@@ -118,7 +118,7 @@ const About = () => {
                   Keep learning new techs
                 </h3>
               </div>
-              <p className="mt-4 text-gray-300 md:mt-2 md:text-center ">
+              <p className="mt-4 text-neutral-600 dark:text-neutral-400 md:mt-2 md:text-center ">
                 I am currently studing and using next.js, diving into node.js to
                 build web development.
               </p>

@@ -18,14 +18,14 @@ const Post = async () => {
               blogs
             </strong>
           </h2>
-          <p className="mt-2 text-lg leading-8 text-muted-foreground dark:text-gray-300">
+          <p className="mt-2 text-lg leading-8 text-muted-foreground text-neutral-600 dark:text-neutral-400">
             I like to write and share my ideas or summary through blogs.
           </p>
         </div>
 
         <Button
           variant="ghost"
-          className="group -mx-3 text-gray-300 md:mx-0"
+          className="group -mx-3 text-neutral-600 dark:text-neutral-400 md:mx-0"
           size="sm"
           asChild
         >

@@ -21,7 +21,7 @@ const Skill = () => {
                 technology
               </strong>
             </p>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground dark:text-gray-300">
+            <p className="mt-6 text-lg leading-8 text-muted-foreground text-neutral-600 dark:text-neutral-400">
               I have worked at three major companies and led over 6 successful
               projects, driving growth and results. I help businesses scale and
               succeed with my expertise. My goal is to guide entrepreneurs with
