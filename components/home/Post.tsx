@@ -12,7 +12,7 @@ const Post = async () => {
     <section id="blog-posts" className="mt-24">
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <div className="flex-auto">
-          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
+          <h2 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
             Latest{" "}
             <strong className="underline decoration-purple-400 underline-offset-8">
               blogs

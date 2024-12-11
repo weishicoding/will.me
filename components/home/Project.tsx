@@ -35,7 +35,7 @@ const Project = () => {
       {/* Products title */}
       <div className="mt-24 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end lg:mt-32">
         <div className="flex-auto ">
-          <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
+          <h2 className="text-balance text-2xl font-bold md:text-3xl lg:text-4xl">
             Some of my{" "}
             <strong className="underline decoration-purple-400 underline-offset-8">
               projects

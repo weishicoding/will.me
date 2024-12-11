@@ -18,7 +18,7 @@ const Contact = () => {
         colorFrom="from-red-600"
         colorTo="to-green-400"
       />
-      <h2 className="mt-16 text-xl font-bold md:text-2xl">Email</h2>
+      <h2 className="mt-16 text-xl font-bold md:text-2xl lg:text-3xl">Email</h2>
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-6">
         {ContactLinks.map((link) => {
           return (
@@ -45,7 +45,9 @@ const Contact = () => {
           );
         })}
       </div>
-      <h2 className="mt-24 text-xl font-bold md:text-2xl">Social</h2>
+      <h2 className="mt-24 text-xl font-bold md:text-2xl lg:text-3xl">
+        Social
+      </h2>
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3 md:mt-6">
         {SocialLinks.map((link) => {
           return (

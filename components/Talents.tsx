@@ -12,7 +12,7 @@ const TalentList = [
       "I'm a full-stack developer who simply loves to code. I’m always eager to learn, grow, and collaborate with others who share the same passion for tech.",
   },
   {
-    name: "Lavori dove e come vuoi",
+    name: "Language skill",
     detail:
       "I'm a full-stack developer who simply loves to code. Whether it's building dynamic websites, solving complex challenges, or just experimenting with new tech, I find joy in every line of code I write. For me, coding isn't just a job—it's a way to bring ideas to life and keep learning something new every day. ",
   },

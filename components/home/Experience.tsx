@@ -7,7 +7,7 @@ const Experience = () => {
     <>
       <div className="mt-24">
         <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-white md:text-4xl lg:text-5xl">
+          <h2 className="text-2xl font-bold text-neutral-900 dark:text-white md:text-3xl lg:text-4xl">
             I'm Will Shi and I'll be your{" "}
             <span className="underline decoration-purple-400 underline-offset-4">
               candidate
