@@ -9,16 +9,8 @@ import {
   IconBrandTiktok,
   IconBrandTwitch,
   IconBrandTwitter,
-  IconDeviceDesktop,
-  IconFlame,
-  IconInfoSquareRounded,
-  IconListDetails,
-  IconMessageCircle,
-  IconPencil,
-  IconSchool,
-  IconSeeding,
-  IconStars,
   IconBrandDiscord,
+  IconBrandX,
 } from "@tabler/icons-react";
 import {
   ChevronRight,
@@ -32,11 +24,6 @@ import { EmailIcon } from "react-share";
 
 export const Icons = {
   close: X,
-  chevronRight: ChevronRight,
-
-  developmentService: ChevronRightSquare,
-  productGrowthAdvisoryService: Shrub,
-  ctoService: Target,
 
   instagram: IconBrandInstagram,
   tiktok: IconBrandTiktok,
@@ -46,22 +33,7 @@ export const Icons = {
   twitch: IconBrandTwitch,
   email: EmailIcon,
   discord: IconBrandDiscord,
-
-  servicesPage: IconDeviceDesktop,
-  learningProductsPage: IconSeeding,
-  projectsPage: IconFlame,
-  contactsPage: IconMessageCircle,
-  blogPage: IconPencil,
-
-  plWhatIsSection: IconInfoSquareRounded,
-  plIsForYouSection: IconFlame,
-  plWhatIsIncludedSection: IconListDetails,
-  plTestimonialsSection: IconStars,
-
-  tclWhatIsSection: IconInfoSquareRounded,
-  tclMentorSection: IconSchool,
-  tclIsForYouSection: IconFlame,
-  tclWhatIsIncludedSection: IconListDetails,
+  x: IconBrandX,
 };
 
 export const Icon = React.forwardRef<

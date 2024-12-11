@@ -40,7 +40,7 @@ export const SocialLinks: SocialLinks = [
     name: "x",
     url: "https://x.com/I1ovecode",
     handle: "@I1ovecode",
-    icon: "twitter",
+    icon: "x",
   },
   {
     name: "discord",
@@ -55,7 +55,7 @@ export const ContactLinks: ContactLinks = [
     name: "Personal",
     mailto: "sanwind0305@gmail.com",
     icon: "email",
-    logo: "/images/mg-logo-white.png",
+    logo: "/images/logo-white.svg",
   },
 ];
 
