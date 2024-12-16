@@ -11,15 +11,9 @@ import {
   IconBrandTwitter,
   IconBrandDiscord,
   IconBrandX,
+  IconLocation,
 } from "@tabler/icons-react";
-import {
-  ChevronRight,
-  ChevronRightSquare,
-  Shrub,
-  Target,
-  X,
-  type LucideIcon,
-} from "lucide-react";
+import { X, type LucideIcon } from "lucide-react";
 import { EmailIcon } from "react-share";
 
 export const Icons = {
@@ -34,6 +28,7 @@ export const Icons = {
   email: EmailIcon,
   discord: IconBrandDiscord,
   x: IconBrandX,
+  location: IconLocation,
 };
 
 export const Icon = React.forwardRef<

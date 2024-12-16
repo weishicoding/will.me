@@ -15,7 +15,7 @@ export const BlogAuthors = [
 ];
 
 export const Routes = {
-  Home: "",
+  Home: "/",
   Blog: "/blog",
   Contact: "/contact",
   About: "/about",
