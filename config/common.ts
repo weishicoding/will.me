@@ -21,4 +21,5 @@ export const Routes = {
   About: "/about",
   Work: "/work",
   LocalBlogPost: (slug: string) => `/blog/${slug}`,
+  Project: (slug: string) => `/work/${slug}`,
 };
