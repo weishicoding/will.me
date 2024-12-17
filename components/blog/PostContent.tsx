@@ -14,11 +14,12 @@ type Props = {
     code: string;
     raw: string;
   };
-  title: string;
+  title?: string;
 };
 
-const Postcontent: React.FC<Props> = async ({ title, body, url }) => {
+const Postcontent: React.FC<Props> = async ({ body }) => {
   const pn = await getPN(body.raw);
+  console.log();
 
   return (
     <>
@@ -28,20 +29,24 @@ const Postcontent: React.FC<Props> = async ({ title, body, url }) => {
         </article>
         <aside className="hidden lg:block lg:min-w-[270px] lg:max-w-[270px]">
           <div className="sticky top-24 will-change-[transform,opacity]">
-            <div className="border-b w-full mb-4">
-              <Button
-                variant="ghost"
-                className="group mb-2 -mx-3  md:mx-0"
-                size="sm"
-                asChild
-              >
-                <Link href={Routes.Blog}>
-                  <IconArrowLeft className="inline-block size-5 transition-transform duration-200 group-hover:-translate-x-1" />
-                  Back to posts
-                </Link>
-              </Button>
-            </div>
-            {pn && pn.length > 0 && <PostNavigation pn={pn} />}
+            {pn && pn.length > 0 && (
+              <>
+                <div className="border-b w-full mb-4">
+                  <Button
+                    variant="ghost"
+                    className="group mb-2 -mx-3  md:mx-0"
+                    size="sm"
+                    asChild
+                  >
+                    <Link href={Routes.Blog}>
+                      <IconArrowLeft className="inline-block size-5 transition-transform duration-200 group-hover:-translate-x-1" />
+                      Back to posts
+                    </Link>
+                  </Button>
+                </div>
+                <PostNavigation pn={pn} />
+              </>
+            )}
           </div>
         </aside>
       </div>
