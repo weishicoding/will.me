@@ -26,7 +26,7 @@ const CareerPath = () => {
               className="m-auto hidden rounded-lg drop-shadow-2xl md:block"
             />
             <Image
-              src="/images/profile.jpg"
+              src="/images/default.png"
               alt=""
               loading="lazy"
               width={1000}

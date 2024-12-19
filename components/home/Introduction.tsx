@@ -23,7 +23,7 @@ const Introduction = () => {
               Will Shi
             </h1>
             <h2 className="text-accent-7 pt-8 text-xl font-semibold leading-8 sm:text-2xl sm:leading-9 md:pr-12">
-              Hi👋 I'm Will, a passionate {""}
+              Hi👋 I'm Will, a {""}
               <strong className="underline decoration-yellow-400 underline-offset-8">
                 full-stack engineer
               </strong>

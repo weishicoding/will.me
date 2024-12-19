@@ -13,8 +13,7 @@ const TalentList = [
   },
   {
     name: "Language skill",
-    detail:
-      "I'm a full-stack developer who simply loves to code. Whether it's building dynamic websites, solving complex challenges, or just experimenting with new tech, I find joy in every line of code I write. For me, coding isn't just a job—it's a way to bring ideas to life and keep learning something new every day. ",
+    detail: "English:B2, Finnish:A2",
   },
 ];
 
@@ -29,7 +28,7 @@ const TalentCard = ({
     <li className="text-sm leading-6">
       <figure className="dark:highlight-white/5 relative flex flex-col-reverse rounded-lg bg-neutral-50 p-6 dark:bg-neutral-900">
         <blockquote className="mt-4 text-neutral-700 dark:text-neutral-400">
-          <p>{detail.detail} </p>
+          <p>{detail.detail}</p>
         </blockquote>
         <figcaption className="flex items-center space-x-4">
           <div className="flex-none">
