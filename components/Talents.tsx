@@ -4,12 +4,12 @@ const TalentList = [
   {
     name: "7 years for Back-end",
     detail:
-      "I'm a full-stack developer who simply loves to code. Whether it's building dynamic websites, solving complex challenges, or just experimenting with new tech, I find joy in every line of code I write. For me, coding isn't just a job—it's a way to bring ideas to life and keep learning something new every day. ",
+      "I started with Java and Spring, and I have been working with it for 7 years. ",
   },
   {
     name: "5 years for Front-end",
     detail:
-      "I'm a full-stack developer who simply loves to code. I’m always eager to learn, grow, and collaborate with others who share the same passion for tech.",
+      "I have been working with Vue and React for 5 years. I have a lot of experience in this field.",
   },
   {
     name: "Language skill",
