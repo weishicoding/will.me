@@ -33,10 +33,6 @@ const Experience = () => {
             I’m always eager to learn, grow, and collaborate with others who
             share the same passion for tech.
             <br />
-            <br />
-            I'm a full-stack developer who simply loves to code. Whether it's
-            building dynamic websites
-            <br />
             <br /> I’m always eager to learn, grow, and collaborate with others
             who share the same passion for tech.
           </p>
