@@ -33,8 +33,6 @@ const Experience = () => {
             I’m always eager to learn, grow, and collaborate with others who
             share the same passion for tech.
             <br />
-            <br /> I’m always eager to learn, grow, and collaborate with others
-            who share the same passion for tech.
           </p>
           <div className="mt-8 h-full md:w-5/12">
             <div className="grid grid-flow-row grid-cols-2 gap-6 md:gap-8">
@@ -74,14 +72,14 @@ const Experience = () => {
                 className="m-auto rounded-lg drop-shadow-2xl"
               />
 
-              <Image
+              {/* <Image
                 src="/images/profile.jpg"
                 alt=""
                 loading="lazy"
                 width={500}
                 height={500}
                 className="m-auto rounded-lg drop-shadow-2xl md:hidden"
-              />
+              /> */}
             </div>
           </div>
         </div>
