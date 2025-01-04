@@ -1,6 +1,3 @@
-/**
- * https://github.com/gatteo/matteogiardino.com
- */
 import React from "react";
 import {
   IconBrandGithub,
