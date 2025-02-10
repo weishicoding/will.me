@@ -15,9 +15,7 @@ const About = () => {
       <div className="">
         <p className="my-8 text-lg leading-8 text-muted-foreground text-neutral-600 dark:text-neutral-400">
           I am a full stack engineer with 7 years of experience in web
-          application development, specializing in Java and React. Recent focus
-          on platform engineering including service architecture, build and test
-          pipeline.
+          application development, specializing in Java and React.
           <br />
           <br />
           I love web developement and I have fully passion to it.
