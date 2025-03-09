@@ -31,7 +31,7 @@ const PostCard: React.FC<BlogPreview> = (post) => {
       </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
-        <div>{formatDate(post.date, "D, MMM, YYYY")}</div>
+        <div>{formatDate(post.date, "YYYY-MM-DD")}</div>
         {post.tags && post.tags.length > 0 && (
           <>
             <div className="text-muted-foreground">•</div>

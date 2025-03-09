@@ -54,7 +54,7 @@ const PostHeader: React.FC<Props> = ({
             </div>
             <div className="text-muted-foreground">•</div>
 
-            <p>{formatDate(createdAt, "D MMM, YYYY")}</p>
+            <p>{formatDate(createdAt, "YYYY-MM-DD")}</p>
 
             {tags.length > 0 && (
               <>

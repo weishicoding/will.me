@@ -1,0 +1,169 @@
+---
+title: "Building Websites with Claude 3.7 Sonnet and MCP"
+createdAt: "2025-03-06T00:00:00Z"
+modifiedAt: "2025-03-06T00:00:00Z"
+summary: "Learn how to leverage Claude 3.7 Sonnet and Multi-Call Programming (MCP) to build modern, responsive websites efficiently."
+authorId: "Will"
+image: "/images/blog/claude-sonnet-mcp/sonnet3.7_MCP.png"
+tags: ["AI", "Claude", "Sonnet", "MCP", "Web Development", "Next.js"]
+---
+
+# Building Websites with Claude 3.7 Sonnet and MCP
+
+Claude 3.7 Sonnet, combined with Multi-Call Programming (MCP), offers a powerful approach to building websites. This guide will walk you through the process of leveraging these tools to create modern, responsive web applications efficiently.
+
+## What is Claude 3.7 Sonnet?
+
+Claude 3.7 Sonnet is Anthropic's advanced AI assistant model that excels at understanding complex instructions, writing code, and solving problems. It offers:
+
+- Exceptional reasoning capabilities
+- Strong coding abilities across multiple languages
+- Deep understanding of web development frameworks
+- Ability to generate and debug code efficiently
+
+## What is Multi-Call Programming (MCP)?
+
+Multi-Call Programming (MCP) is a methodology that allows Claude to interact directly with GitHub repositories and other development tools. With MCP, Claude can:
+
+- Create and modify GitHub repositories
+- Push code changes directly to repositories
+- Create issues and pull requests
+- Search for code and repositories
+- Fork repositories and create branches
+
+This direct integration with development tools makes the development process much more streamlined.
+
+## Setting Up Your Environment
+
+Before you start building websites with Claude and MCP, you'll need to set up your environment:
+
+1. **Access to Claude 3.7 Sonnet**: Use Claude through platforms like Anthropic's Claude Pro, Claude Team, or Claude Business.
+
+2. **GitHub Account**: Since MCP integrates with GitHub, you'll need an account to store and manage your code.
+
+3. **Basic Web Development Knowledge**: While Claude can generate code, having a basic understanding of HTML, CSS, JavaScript, and modern frameworks like React or Next.js will help you communicate your requirements effectively.
+
+## Building a Website: Step-by-Step Guide
+
+### Step 1: Planning Your Website
+
+Start by clearly defining what you want to build. Claude excels when given specific requirements:
+
+```
+I want to build a personal portfolio website with the following sections:
+- Home page with a hero section
+- About me section
+- Projects showcase
+- Blog
+- Contact form
+```
+
+The more detailed your requirements, the better Claude can assist you.
+
+### Step 2: Creating a New Repository
+
+Use MCP to create a new GitHub repository:
+
+```
+Please create a new GitHub repository for my portfolio website.
+```
+
+Claude will use the `mcp__create_repository` function to create a repository for your project.
+
+### Step 3: Choosing a Framework
+
+For modern websites, frameworks like Next.js provide excellent performance and developer experience. You can ask Claude to set up a Next.js project:
+
+```
+Please set up a Next.js project with TypeScript and Tailwind CSS in the repository.
+```
+
+Claude will create the necessary files and configuration for a Next.js project.
+
+### Step 4: Building Components
+
+Break down your website into components and ask Claude to build them one by one:
+
+```
+Please create a responsive navigation component for my website.
+```
+
+Claude can generate the code for each component and push it to your repository.
+
+### Step 5: Styling Your Website
+
+Claude can help you style your website using CSS or utility frameworks like Tailwind CSS:
+
+```
+Please style the hero section with a gradient background and animated text.
+```
+
+### Step 6: Adding Functionality
+
+Add interactive elements and functionality to your website:
+
+```
+Please add a contact form that validates input and sends emails.
+```
+
+Claude can implement form validation, API routes for handling form submissions, and more.
+
+### Step 7: Testing and Debugging
+
+Claude can help you test your website and fix any issues:
+
+```
+The contact form isn't submitting properly. Can you help me debug it?
+```
+
+Claude can review your code, identify issues, and suggest fixes.
+
+### Step 8: Deployment
+
+Finally, deploy your website to a hosting platform:
+
+```
+Please help me deploy my website to Vercel.
+```
+
+Claude can guide you through the deployment process or even set up GitHub Actions for continuous deployment.
+
+## Best Practices for Working with Claude and MCP
+
+1. **Be Specific**: Clearly communicate your requirements and preferences.
+
+2. **Iterative Development**: Build your website incrementally, reviewing and refining each component.
+
+3. **Provide Feedback**: Let Claude know what works and what doesn't so it can adjust its approach.
+
+4. **Learn from the Code**: Take the opportunity to learn from the code Claude generates.
+
+5. **Maintain Version Control**: Use Git effectively to track changes and revert if necessary.
+
+## Real-World Example: Building a Blog with Next.js
+
+Let's walk through a concrete example of building a blog with Next.js, Claude, and MCP:
+
+1. **Create Repository**: Ask Claude to create a new repository for your blog.
+
+2. **Set Up Next.js**: Have Claude set up a Next.js project with the necessary dependencies.
+
+3. **Create Blog Structure**: Ask Claude to create the folder structure and basic components for your blog.
+
+4. **Implement MDX Support**: Have Claude add MDX support for writing blog posts in Markdown.
+
+5. **Style the Blog**: Ask Claude to style your blog using Tailwind CSS.
+
+6. **Add Features**: Request features like pagination, categories, search functionality, etc.
+
+7. **Deploy**: Finally, deploy your blog to a hosting platform like Vercel.
+
+## Conclusion
+
+Claude 3.7 Sonnet, combined with MCP, offers a powerful approach to building websites. By leveraging Claude's coding abilities and MCP's integration with development tools, you can build modern, responsive websites efficiently.
+
+Whether you're a seasoned developer looking to speed up your workflow or a beginner taking your first steps in web development, Claude and MCP can help you bring your ideas to life.
+
+Start small, be specific with your requirements, and iterate based on feedback. With practice, you'll develop an effective workflow that leverages the strengths of AI assistance while maintaining control over your project's direction and quality.
+
+Happy building!

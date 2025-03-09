@@ -40,7 +40,7 @@ export async function getAllBlogPosts(limit?: number): Promise<BlogPreview[]> {
   const localPosts = getLocalBlogPosts();
 
   const sortedLocalPosts = localPosts.sort(
-    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+    (a, b) => Number(new Date(a.date)) - Number(new Date(b.date))
   );
 
   return [...sortedLocalPosts].slice(0, limit);
